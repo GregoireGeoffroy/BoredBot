@@ -4,9 +4,7 @@ BoredBot is a simple web app that helps you fight boredom by suggesting fun and 
 
 ## Demo
 
-![BoredBot Screenshot](https://user-images.githubusercontent.com/yourusername/boredbot-screenshot.png)
-
-*Note: Replace the image link with a screenshot of your application.*
+![BoredBot Screenshot](https://raw.githubusercontent.com/GregoireGeoffroy/BoredBot/main/boredbot-screenshot.png)
 
 ---
 
