@@ -6,6 +6,8 @@ BoredBot is a simple web app that helps you fight boredom by suggesting fun and 
 
 ![BoredBot Screenshot](https://raw.githubusercontent.com/GregoireGeoffroy/BoredBot/main/boredbot-screenshot.png)
 
+[Live Demo](https://boredbotsuggest.netlify.app/)
+
 ---
 
 ## Features
