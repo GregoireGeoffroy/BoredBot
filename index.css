@@ -1,28 +1,85 @@
+/* Reset default margin and set font */
 body {
-    /* uigradients.com */
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+}
+
+/* Main container styling */
+main {
+    background: linear-gradient(135deg, #667eea, #764ba2);
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: Oxygen, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
 }
 
+/* Title styling */
+#title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Activity text styling */
+#activity {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Button styling */
 button {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: red;
-    border: 1px solid darkred;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
     cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+button:hover {
+    background: #ee5253;
+    transform: translateY(-5px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Fun mode background */
 .fun {
-    /* CSS generated from https://uigradients.com */
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    transition: background 0.5s;
+}
+
+/* Fade-in animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
